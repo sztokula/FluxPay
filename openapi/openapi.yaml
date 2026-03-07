@@ -1,0 +1,77 @@
+openapi: 3.1.0
+info:
+  title: Portfolio Payment Platform API
+  version: 1.0.0
+  description: Stripe-like payment simulation API for portfolio showcase.
+servers:
+  - url: http://localhost:8000
+security:
+  - bearerAuth: []
+paths:
+  /api/system/health:
+    get:
+      summary: Get system health snapshot
+      responses:
+        "200":
+          description: Health payload
+  /api/payment-intents:
+    get:
+      summary: List payment intents
+      responses:
+        "200":
+          description: Paginated list
+    post:
+      summary: Create payment intent
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [customer_id, amount]
+              properties:
+                customer_id:
+                  type: integer
+                amount:
+                  type: integer
+                currency:
+                  type: string
+                metadata:
+                  type: object
+      responses:
+        "201":
+          description: Created
+  /api/payment-intents/{paymentIntent}/confirm:
+    post:
+      summary: Confirm payment intent
+      parameters:
+        - in: path
+          name: paymentIntent
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [card_number]
+              properties:
+                card_number:
+                  type: string
+      responses:
+        "200":
+          description: Confirmed
+  /api/customers:
+    get:
+      summary: List customers
+      responses:
+        "200":
+          description: Paginated list
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: token
