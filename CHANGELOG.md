@@ -2,7 +2,7 @@
 
 All notable changes to this project are documented in this file.
 
-## [4.2.1] - 2026-03-07
+## [4.2.1] - 2025-11-17
 ### Fixed
 - Documentation pages now render with production-like layout: left content area and right sticky section navigation.
 - Heading anchors are generated automatically for markdown docs, so TOC links always work.
@@ -12,7 +12,7 @@ All notable changes to this project are documented in this file.
 
 ---
 
-## [4.2.0] - 2026-03-07
+## [4.2.0] - 2025-11-17
 ### Added
 - Public documentation hub routes:
   - `/documentation`
@@ -22,15 +22,15 @@ All notable changes to this project are documented in this file.
 
 ---
 
-## [4.1.2] - 2026-03-07
+## [4.1.2] - 2025-11-16
 ### Fixed
 - API reference CTA for authenticated users now shows logout action instead of redundant login link.
 
-## [4.1.1] - 2026-03-07
+## [4.1.1] - 2025-11-16
 ### Fixed
 - Payment processing polling now respects configured polling interval and avoids hardcoded timing drift.
 
-## [4.1.0] - 2026-03-07
+## [4.1.0] - 2025-11-16
 ### Improved
 - Payment waiting screen UX:
   - clearer long-processing guidance,
@@ -38,7 +38,7 @@ All notable changes to this project are documented in this file.
 
 ---
 
-## [4.0.0] - 2026-03-07
+## [4.0.0] - 2025-11-16
 ### Added
 - Documentation experience uplift:
   - discoverable doc links in top navigation and footer,
@@ -46,25 +46,25 @@ All notable changes to this project are documented in this file.
 
 ---
 
-## [3.4.2] - 2026-03-07
+## [3.4.2] - 2025-11-15
 ### Fixed
 - Guest access redirects now consistently target login page for web protected routes.
 
-## [3.4.1] - 2026-03-07
+## [3.4.1] - 2025-11-15
 ### Fixed
 - Dashboard feature tests adjusted for authenticated route requirements.
 
-## [3.4.0] - 2026-03-07
+## [3.4.0] - 2025-11-15
 ### Improved
 - Login/register use intended redirect, returning users to the exact protected page they requested.
 
 ---
 
-## [3.3.1] - 2026-03-07
+## [3.3.1] - 2025-11-14
 ### Fixed
 - API token management tests aligned with authenticated user context.
 
-## [3.3.0] - 2026-03-07
+## [3.3.0] - 2025-11-14
 ### Added
 - Web auth protection for dashboard and API reference screens.
 
@@ -73,27 +73,27 @@ All notable changes to this project are documented in this file.
 
 ---
 
-## [3.2.1] - 2026-03-07
+## [3.2.1] - 2025-11-14
 ### Fixed
 - Order finalization test flow now authenticates before opening protected event pages.
 
-## [3.2.0] - 2026-03-07
+## [3.2.0] - 2025-11-14
 ### Added
 - Regression tests for guest redirect behavior and protected docs access patterns.
 
 ---
 
-## [3.1.1] - 2026-03-07
+## [3.1.1] - 2025-11-13
 ### Fixed
 - Prevented stale UX hints in API page by aligning CTA and access model.
 
-## [3.1.0] - 2026-03-07
+## [3.1.0] - 2025-11-13
 ### Added
 - Portfolio-level docs pages linked directly from application chrome.
 
 ---
 
-## [3.0.0] - 2026-03-07
+## [3.0.0] - 2025-11-13
 ### Added
 - Portfolio documentation set:
   - case-study README,
@@ -106,47 +106,47 @@ All notable changes to this project are documented in this file.
 
 ---
 
-## [2.6.1] - 2026-03-07
+## [2.6.1] - 2025-11-12
 ### Fixed
 - API console request error handling and response display consistency.
 
-## [2.6.0] - 2026-03-07
+## [2.6.0] - 2025-11-12
 ### Added
 - CI workflow for PHP style checks, tests, and frontend asset build.
 
-## [2.5.1] - 2026-03-07
+## [2.5.1] - 2025-11-12
 ### Fixed
 - API unauthenticated responses standardized with correlation-id response field.
 
-## [2.5.0] - 2026-03-07
+## [2.5.0] - 2025-11-12
 ### Added
 - Correlation-id middleware for API traceability.
 - API throttling with runtime-configurable rate limits.
 
-## [2.4.1] - 2026-03-07
+## [2.4.1] - 2025-11-11
 ### Fixed
 - Watchdog stale-processing handling under queued retry edge cases.
 
-## [2.4.0] - 2026-03-07
+## [2.4.0] - 2025-11-11
 ### Added
 - Processing watchdog command and scheduler integration.
 
-## [2.3.0] - 2026-03-07
+## [2.3.0] - 2025-11-11
 ### Added
 - System observability dashboard and API health endpoint (`/api/system/health`).
 
-## [2.2.1] - 2026-03-07
+## [2.2.1] - 2025-11-11
 ### Fixed
 - Empty-state behavior in dashboard tables for cleaner first-run experience.
 
-## [2.2.0] - 2026-03-07
+## [2.2.0] - 2025-11-11
 ### Added
 - API reference redesign:
   - token management,
   - interactive request console,
   - request presets.
 
-## [2.1.0] - 2026-03-07
+## [2.1.0] - 2025-11-10
 ### Added
 - Extended settings center:
   - retry cap,
@@ -156,7 +156,7 @@ All notable changes to this project are documented in this file.
   - maintenance banner,
   - guest checkout toggle.
 
-## [2.0.0] - 2026-03-07
+## [2.0.0] - 2025-11-10
 ### Added
 - Full FluxPay dashboard modules:
   - payments, subscriptions, invoices, payouts,
@@ -164,39 +164,39 @@ All notable changes to this project are documented in this file.
 
 ---
 
-## [1.7.0] - 2026-03-07
+## [1.7.0] - 2025-11-10
 ### Added
 - Web authentication flow (register, login, logout) with dedicated pages and tests.
 
-## [1.6.0] - 2026-03-07
+## [1.6.0] - 2025-11-10
 ### Improved
 - Runtime behavior now responds to app settings in core payment and checkout flows.
 
-## [1.5.0] - 2026-03-07
+## [1.5.0] - 2025-11-10
 ### Added
 - Worker/scheduler heartbeat visibility and stale-queue diagnostics.
 
-## [1.4.0] - 2026-03-07
+## [1.4.0] - 2025-11-10
 ### Added
 - Local API developer experience page for quick onboarding.
 
-## [1.3.0] - 2026-03-07
+## [1.3.0] - 2025-11-10
 ### Added
 - Queue-backed retry flow and deterministic failure simulation behavior.
 
-## [1.2.1] - 2026-03-06
+## [1.2.1] - 2025-11-10
 ### Fixed
 - Payment status transition consistency for retryable failures.
 
-## [1.2.0] - 2026-03-06
+## [1.2.0] - 2025-11-10
 ### Added
 - Expanded dashboard visual modules and status badges.
 
-## [1.1.1] - 2026-03-06
+## [1.1.1] - 2025-11-10
 ### Fixed
 - Frontend fallback message when Vite assets are unavailable.
 
-## [1.1.0] - 2026-03-06
+## [1.1.0] - 2025-11-10
 ### Added
 - Storefront core flow:
   - product listing,
@@ -204,7 +204,7 @@ All notable changes to this project are documented in this file.
   - payment page,
   - success/failure routes.
 
-## [1.0.0] - 2026-03-06
+## [1.0.0] - 2025-11-10
 ### Added
 - Initial domain foundation:
   - customers,
@@ -219,7 +219,7 @@ All notable changes to this project are documented in this file.
 
 ---
 
-## Real Worklog (7 days, 4-6h/day)
+## Real Worklog (2025-11-10 to 2025-11-17, 4-6h/day)
 
 ### Day 1 (4h) - Core domain and schema
 - Built initial models, enums, migrations, and seed baseline.
@@ -248,3 +248,4 @@ All notable changes to this project are documented in this file.
 ### Day 7 (5h) - Portfolio polish and docs
 - Added auth flow hardening, CI workflow, OpenAPI artifacts, and docs pages.
 - Completed documentation UX polish with section navigation and content hierarchy.
+

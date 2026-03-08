@@ -173,12 +173,13 @@
         <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-6">
             <a href="{{ route('home') }}" class="text-lg font-extrabold tracking-tight sm:text-xl">
                 <span class="rounded-lg bg-slate-900 px-2 py-1 text-xs font-bold uppercase tracking-wider text-white">Demo</span>
-                <span class="ml-2">{{ $projectName }}</span>
+                <span class="ml-2">FluxPay</span>
             </a>
 
             <nav class="hidden flex-wrap items-center justify-end gap-2 text-sm font-semibold md:flex md:gap-3">
                 <a href="{{ route('home') }}" class="rounded-lg px-3 py-1.5 {{ request()->routeIs('home') ? 'bg-slate-900 text-white' : 'text-slate-600 hover:bg-slate-100 hover:text-slate-900' }}">Home</a>
                 <a href="{{ route('products.index') }}" class="rounded-lg px-3 py-1.5 {{ request()->routeIs('products.*') || request()->routeIs('checkout.*') || request()->routeIs('payment.*') ? 'bg-slate-900 text-white' : 'text-slate-600 hover:bg-slate-100 hover:text-slate-900' }}">Storefront</a>
+                <a href="https://github.com/sztokula/FluxPay" target="_blank" rel="noopener noreferrer" class="rounded-lg px-3 py-1.5 text-slate-600 hover:bg-slate-100 hover:text-slate-900">GitHub</a>
 
                 <details class="group relative">
                     <summary class="list-none cursor-pointer rounded-lg px-3 py-1.5 text-slate-600 hover:bg-slate-100 hover:text-slate-900 {{ request()->routeIs('docs.*') ? 'bg-slate-900 text-white hover:bg-slate-900 hover:text-white' : '' }}">
@@ -218,6 +219,7 @@
                 <div class="absolute right-0 top-11 z-30 w-64 rounded-xl border border-slate-200 bg-white p-2 shadow-xl">
                     <a href="{{ route('home') }}" class="block rounded-lg px-3 py-2 text-sm {{ request()->routeIs('home') ? 'bg-slate-900 text-white' : 'text-slate-700 hover:bg-slate-100' }}">Home</a>
                     <a href="{{ route('products.index') }}" class="mt-1 block rounded-lg px-3 py-2 text-sm {{ request()->routeIs('products.*') || request()->routeIs('checkout.*') || request()->routeIs('payment.*') ? 'bg-slate-900 text-white' : 'text-slate-700 hover:bg-slate-100' }}">Storefront</a>
+                    <a href="https://github.com/sztokula/FluxPay" target="_blank" rel="noopener noreferrer" class="mt-1 block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-100">GitHub</a>
 
                     <p class="mt-3 px-3 text-[11px] font-bold uppercase tracking-wider text-slate-500">Docs</p>
                     <a href="{{ route('docs.documentation') }}" class="mt-1 block rounded-lg px-3 py-2 text-sm {{ request()->routeIs('docs.documentation') ? 'bg-slate-900 text-white' : 'text-slate-700 hover:bg-slate-100' }}">Documentation</a>
