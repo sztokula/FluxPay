@@ -5,7 +5,7 @@ Production-inspired local payment platform focused on payment lifecycle, retries
 
 ## Why This Project
 
-This project demonstrates mid-level backend/fullstack skills:
+This project demonstrates:
 - domain modeling for payment systems,
 - async processing with queues and retries,
 - idempotent API writes,
